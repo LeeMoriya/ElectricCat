@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13E1548D-2A2A-452C-8F63-82FA97B90B26}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ElectricCat</RootNamespace>
+    <AssemblyName>ElectricCat</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>E:\Steam Games\steamapps\common\Rain World\Mods\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\Steam Games\steamapps\common\Rain World\Mods\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="HOOKS-Assembly-CSharp">
+      <HintPath>E:\Steam Games\steamapps\common\Rain World\Mods\HOOKS-Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="JollyCoop_v1.6.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Steam Games\steamapps\common\Rain World\Mods\JollyCoop_v1.6.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Partiality">
+      <HintPath>E:\Steam Games\steamapps\common\Rain World\Mods\Partiality.dll</HintPath>
+    </Reference>
+    <Reference Include="SlugBase">
+      <HintPath>E:\Steam Games\steamapps\common\Rain World\Mods\SlugBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>E:\Steam Games\steamapps\common\Rain World\Mods\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ElectricCat.cs" />
+    <Compile Include="ElectricMod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scenes\SelectMenu\0.png" />
+    <EmbeddedResource Include="Resources\Scenes\SelectMenu\1.png" />
+    <EmbeddedResource Include="Resources\Scenes\SelectMenu\2.png" />
+    <EmbeddedResource Include="Resources\Scenes\SelectMenu\3.png" />
+    <EmbeddedResource Include="Resources\Scenes\SelectMenu\4.png" />
+    <EmbeddedResource Include="Resources\Scenes\SelectMenu\5.png" />
+    <EmbeddedResource Include="Resources\Scenes\SelectMenu\Flat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scenes\SelectMenu\scene.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scenes\SleepScreen\scene.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scenes\SleepScreen\1.png" />
+    <EmbeddedResource Include="Resources\Scenes\SleepScreen\2.png" />
+    <EmbeddedResource Include="Resources\Scenes\SleepScreen\3.png" />
+    <EmbeddedResource Include="Resources\Scenes\SleepScreen\4.png" />
+    <EmbeddedResource Include="Resources\Scenes\SleepScreen\5.png" />
+    <EmbeddedResource Include="Resources\Scenes\SleepScreen\Flat.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scenes\SelectMenuAscended\scene.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scenes\SelectMenuAscended\A.png" />
+    <EmbeddedResource Include="Resources\Scenes\SelectMenuAscended\B.png" />
+    <EmbeddedResource Include="Resources\Scenes\SelectMenuAscended\Bkg.png" />
+    <EmbeddedResource Include="Resources\Scenes\SelectMenuAscended\Flat.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
