@@ -34,13 +34,10 @@ Place the **.dll** in your Mods folder and apply with BOI if using BepInEx or th
 When one or more players is in charged mode, all players will gain the buff to stats it provides. I'm not sure if this is fixable due to how SlugBase and JollyCoop interact with one another.
 
 ## Credits
-### 2.0
 - **Shiro_pb** - For the original Electric Cat mod
 - **Slime_Cubed** - For the SlugBase slugcat framework
 - **LeeMoriya** - For porting and new features
-### 1.0
-- Concept by Shiro_pb and ZangTang(aka. Alex)
-- Code by Shiro_pb, 
+- Original concept by Shiro_pb and ZangTang(aka. Alex)
 - Art by ZangTang and Turtle
 
 ### Special Thanks
