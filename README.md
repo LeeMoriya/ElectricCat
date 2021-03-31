@@ -41,7 +41,7 @@ When one or more players is in charged mode, all players will gain the buff to s
 - Code by Shiro_pb, 
 - Art by ZangTang and Turtle
 
-**Special Thanks**
+### Special Thanks
 
 DrCorporalKlinger,
 Empathy Module,
