@@ -1,7 +1,5 @@
 # Electric Cat - SlugBase Edition
 
-This is a port of Shiro_pb's awesome Electric Cat mod that makes use of the SlugBase framework.
-
 *This mod adds a fourth playable slugcat, the electric cat!*
 *To activate the cat's abilities get four food pips and, while standing, hold up for a few seconds. Besides that, the ability can be activated*
 *by touching the zap coils in five pebbles, eating a jellyfish, holding a lantern mouse and getting shocked by a centipede.*
@@ -9,6 +7,8 @@ This is a port of Shiro_pb's awesome Electric Cat mod that makes use of the Slug
 
 
 ## Features:
+
+This is a port of Shiro_pb's awesome Electric Cat mod that makes use of the SlugBase framework.
 - Increased compatibility with other mods
 - You no longer shock tamed Lizards in charged mode
 - Single .DLL file, no loose assets
