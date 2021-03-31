@@ -24,6 +24,7 @@ This is a port of Shiro_pb's awesome Electric Cat mod that makes use of the Slug
 
 ### Issues
 When one or more players is in charged mode, all players will gain the buff to stats it provides.
+
 I'm not sure if this is fixable due to how SlugBase and JollyCoop interact with one another.
 
 ## Credits
