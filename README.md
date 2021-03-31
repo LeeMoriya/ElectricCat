@@ -22,6 +22,8 @@ This is a port of Shiro_pb's awesome Electric Cat mod that makes use of the Slug
 **Download:**
 - [ElectricCat.dll](https://github.com/LeeMoriya/ElectricCat/releases/download/v1.0/ElectricCat.dll)
 
+Place the **.dll** in your Mods folder and apply with BOI if using BepInEx or the Partiality Launcher if using Partiality.
+
 ## Jolly Coop
 - If playing with Jolly Coop, players that are set to 'Match Player 1' will also spawn as Electric Cats.
 - Manually entering charged mode will consume 4 food pips but enable charged mode for all Electric Cats.
