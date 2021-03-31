@@ -916,12 +916,7 @@ public class ElectricCat : SlugBaseCharacter
                 this.buttonPressed = 0f;
                 ply.room.PlaySound(SoundID.Bomb_Explode, ply.firstChunk, false, 0.7f, 1f);
                 this.chargedActive = true;
-                ply.gravity = 0.75f;
-                ply.slugcatStats.runspeedFac = 1.5f;
-                ply.slugcatStats.poleClimbSpeedFac = 2f;
-                ply.slugcatStats.corridorClimbSpeedFac = 2f;
-                ply.buoyancy = 0.95f;
-                ply.slugcatStats.throwingSkill = 2;
+                Stats(true);
                 this.chargedTimer = 1200f;
             }
         }
@@ -929,13 +924,29 @@ public class ElectricCat : SlugBaseCharacter
         {
             this.chargedActive = false;
             this.chargedTimer = 0f;
-            ply.slugcatStats.runspeedFac = 0.9f;
-            ply.slugcatStats.poleClimbSpeedFac = 1f;
-            ply.slugcatStats.corridorClimbSpeedFac = 1f;
-            ply.gravity = 0.9f;
-            ply.buoyancy = 0.95f;
-            ply.slugcatStats.throwingSkill = 1;
+            Stats(false);
             ply.room.PlaySound(SoundID.Centipede_Shock, ply.firstChunk);
+        }
+        public void Stats(bool charged)
+        {
+            if (charged)
+            {
+                ply.gravity = 0.75f;
+                ply.slugcatStats.runspeedFac = 1.5f;
+                ply.slugcatStats.poleClimbSpeedFac = 2f;
+                ply.slugcatStats.corridorClimbSpeedFac = 2f;
+                ply.buoyancy = 0.95f;
+                ply.slugcatStats.throwingSkill = 2;
+            }
+            else
+            {
+                ply.slugcatStats.runspeedFac = 0.9f;
+                ply.slugcatStats.poleClimbSpeedFac = 1f;
+                ply.slugcatStats.corridorClimbSpeedFac = 1f;
+                ply.gravity = 0.9f;
+                ply.buoyancy = 0.95f;
+                ply.slugcatStats.throwingSkill = 1;
+            }
         }
         public void EnterChargedMode()
         {
@@ -945,10 +956,7 @@ public class ElectricCat : SlugBaseCharacter
                 this.buttonPressed = 0f;
                 ply.room.PlaySound(SoundID.Bomb_Explode, ply.firstChunk, false, 0.7f, 1f);
                 this.chargedActive = true;
-                ply.gravity = 0.75f;
-                ply.slugcatStats.runspeedFac = 1.5f;
-                ply.slugcatStats.poleClimbSpeedFac = 2f;
-                ply.slugcatStats.corridorClimbSpeedFac = 2f;
+                Stats(true);
                 for (int i = 0; i < ply.room.game.Players.Count; i++)
                 {
                     (ply.room.game.Players[i].realizedCreature as Player).playerState.foodInStomach -= 4;
@@ -958,8 +966,6 @@ public class ElectricCat : SlugBaseCharacter
                     JollyFoodAdjust();
                 }
                 ply.room.game.cameras[0].hud.foodMeter.NewShowCount(ply.playerState.foodInStomach);
-                ply.buoyancy = 0.95f;
-                ply.slugcatStats.throwingSkill = 2;
                 if (ply.Karma > 5)
                 {
                     this.chargedTimer = (float)(600 * ply.Karma);
@@ -1000,7 +1006,7 @@ public class ElectricCat : SlugBaseCharacter
                             this.EnterChargedMode();
                             for (int i = 0; i < EVars.Count; i++)
                             {
-                                if(EVars[i] != this)
+                                if (EVars[i] != this)
                                 {
                                     EVars[i].EnterChargedModeNoToll();
                                 }
@@ -1038,13 +1044,12 @@ public class ElectricCat : SlugBaseCharacter
         {
             Color color = playerColor;
             Color color2 = new Color(playerColor.r + 100f * 0.00349f, playerColor.g + 100f * 0.0025f, playerColor.b + 100f * 0.00125f);
-            Color a = new Color(1f, 0.7176f, 0.3333f);
             Color result;
             if (chargedActive)
             {
                 if (stunDelay > 0f)
                 {
-                    result = Color.Lerp(a, color, stunDelay / 300f);
+                    result = Color.Lerp(color2, color, stunDelay / 300f);
                 }
                 else
                 {
