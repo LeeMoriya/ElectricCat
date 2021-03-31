@@ -11,10 +11,10 @@ This is a port of Shiro_pb's awesome Electric Cat mod that makes use of the Slug
 
 ## Installation:
 **Requirements:**
-- [SlugBase]()
+- [SlugBase](https://github.com/SlimeCubed/SlugBase/releases)
 
 **Download:**
-- [ElectricCat.dll]()
+- [ElectricCat.dll](https://github.com/LeeMoriya/ElectricCat/releases/download/v1.0/ElectricCat.dll)
 
 ## Jolly Coop
 - If playing with Jolly Coop, players that are set to 'Match Player 1' will also spawn as Electric Cats.
