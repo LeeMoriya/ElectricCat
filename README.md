@@ -23,7 +23,8 @@ This is a port of Shiro_pb's awesome Electric Cat mod that makes use of the Slug
 - Electric Cats can shock non-Electric Cat players, careful not to hurt your friends!
 
 ### Issues
-- When one or more players is in charged mode, all players will gain the buff to stats it provides, this seems to be an incompatibility between SlugBase and JollyCoop.
+When one or more players is in charged mode, all players will gain the buff to stats it provides.
+I'm not sure if this is fixable due to how SlugBase and JollyCoop interact with one another.
 
 ## Credits
 - **Shiro_pb** - For the original Electric Cat mod
