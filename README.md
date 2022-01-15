@@ -1,4 +1,4 @@
-# Electric Cat - SlugBase Edition
+# Electric Cat - SlugBase Edition ![img](https://img.shields.io/github/downloads/LeeMoriya/ElectricCat/total?style=for-the-badge)
 
 *This mod adds a fourth playable slugcat, the electric cat!*
 *To activate the cat's abilities get four food pips and, while standing, hold up for a few seconds. Besides that, the ability can be activated*
